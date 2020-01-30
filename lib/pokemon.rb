@@ -19,9 +19,9 @@ attr_accessor :id, :name, :type, :db
    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
   end
 
-  def self.find(id, db)
-    # find pokemon by ID
-    # return a new pokemon object
-    db.execute("SELECT * FROM pokemon WHERE id = ?;", id)
-  end
+  # def self.find(id, db)
+  #   # find pokemon by ID
+  #   # return a new pokemon object
+  #   db.execute("SELECT * FROM pokemon WHERE id = ?;", id)
+  # end
 end
